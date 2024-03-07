@@ -29,7 +29,7 @@ RUN git config --global user.email "Sanzy1207@gmail.com"
 && git config --global user.name "Mathias" \
 && git config –global url."https://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:@github.com/".insteadOf
 "https://github.com" \
-&& mkdir -p github.com/snowthesnowman
+&& mkdir -p github.com/snowthesnowman/sem02v24
 
 USER root
 RUN curl -SL https://go.dev/dl/go1.22.0.linux-aMD64.tar.gz \

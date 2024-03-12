@@ -9,7 +9,18 @@ sudo \
 nano \
 wget \
 curl \
-git
+git \
+build-essential \
+gcc \
+openjdk-21-jdk \
+mono-complete \
+python3 \
+strace \
+valgrind
+
+RUN curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf \
+| sh -s -- -y
+ENV PATH="${PATH}:${HOME}/.cargo/bin"
 
 RUN useradd -G sudo -m -d /home/Mathias -s /bin/bash -p "$(openssl passwd -1 Password)" Mathias
 

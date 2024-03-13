@@ -1,12 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void overflow(int num) {
-    int arr[100];
-    printf("%d\n", num);
-    overflow(num + 1);
+#define STACK_SIZE 1000
+
+void fillStack(int *ptr) {
+    fillStack(ptr);
 }
 
-int main(void) {
-    overflow(0);
+int main() {
+    int stack[STACK_SIZE];
+    
+    // Kall funksjonen som fyller opp stacken
+    fillStack(stack);
+    
     return 0;
 }

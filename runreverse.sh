@@ -1,6 +1,6 @@
 #!/bin/bash
-GITHUBUSER="...fyll inn ditt brukernavn på Github ..."
-BASE="${HOME}/github.com/${GITHUBUSER}/fil/sem02v24"
+snowthesnowman="...fyll inn ditt brukernavn på Github ..."
+BASE="${HOME}/github.com/${snowthesnowman}/fil/sem02v24"
 cd ${BASE}/c 
 echo -e "\n----- C --------"
 time ./reverse
